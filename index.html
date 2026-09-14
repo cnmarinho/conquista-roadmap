@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Roadmap e status de evolução da plataforma Curso Conquista." />
+  <title>Conquista | Product Roadmap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Conquista Roadmap">
+      <span class="brand-mark">C</span>
+      <span>CONQUISTA</span>
+    </a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#status">Status</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#saas">SaaS</a>
+      <a href="#fases">Fases</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">PRODUCT ROADMAP</span>
+        <h1>De sistema acadêmico a <span>plataforma SaaS.</span></h1>
+        <p>Acompanhe o que já foi entregue no Curso Conquista, o que está em validação e os próximos passos para transformar o produto em uma plataforma comercial para múltiplas instituições de ensino.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#roadmap">Ver roadmap</a>
+          <a class="button secondary" href="#saas">SaaS readiness</a>
+        </div>
+        <p class="updated">Última atualização: <strong id="lastUpdated">14/09/2026</strong></p>
+      </div>
+
+      <aside class="release-card" aria-label="Release atual">
+        <div class="release-head">
+          <span>Release atual</span>
+          <span class="status-pill status-progress">HML</span>
+        </div>
+        <strong class="release-version">v0.1 Piloto</strong>
+        <p>Base preparada para homologação do primeiro cliente-piloto.</p>
+        <div class="release-line"><span>Stack</span><strong>CI4 + React + MySQL</strong></div>
+        <div class="release-line"><span>Branch principal</span><strong>DEV</strong></div>
+        <div class="release-line"><span>Objetivo</span><strong>Produto multi-tenant</strong></div>
+      </aside>
+    </section>
+
+    <section class="section" id="status">
+      <div class="section-heading"><span class="eyebrow">VISÃO GERAL</span><h2>Status do produto</h2><p>Indicadores calculados a partir do checklist exibido nesta página.</p></div>
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <section class="section" id="roadmap">
+      <div class="section-heading"><span class="eyebrow">CHECKLIST</span><h2>Roadmap funcional</h2><p>Do núcleo acadêmico já implementado aos módulos necessários para comercialização.</p></div>
+      <div class="roadmap-grid" id="roadmapGrid"></div>
+    </section>
+
+    <section class="section saas-section" id="saas">
+      <div class="section-heading"><span class="eyebrow">SAAS READINESS</span><h2>O que falta para virar produto multi-cliente</h2><p>Checklist técnico e operacional para sair do piloto e chegar a uma oferta SaaS sustentável.</p></div>
+      <div class="saas-grid" id="saasGrid"></div>
+    </section>
+
+    <section class="section" id="fases">
+      <div class="section-heading"><span class="eyebrow">EVOLUÇÃO</span><h2>Fases do produto</h2></div>
+      <div class="phases" id="phases"></div>
+    </section>
+
+    <section class="section principles">
+      <div class="section-heading compact"><span class="eyebrow">PRINCÍPIOS</span><h2>Critérios de evolução</h2></div>
+      <div class="principle-grid">
+        <article><strong>Segurança por padrão</strong><p>Isolamento de dados, RBAC, segredos, auditoria e proteção de produção.</p></article>
+        <article><strong>Cliente isolado</strong><p>Cada instituição deve operar de forma independente dentro da mesma plataforma.</p></article>
+        <article><strong>Operação previsível</strong><p>Deploy, backup, observabilidade e rollback precisam ser processos repetíveis.</p></article>
+        <article><strong>Produto configurável</strong><p>Marca, regras e parâmetros devem variar por instituição sem forks de código.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Conquista Product Roadmap</strong><p>Página de acompanhamento do desenvolvimento do produto.</p></div>
+    <span>Não contém dados sensíveis, credenciais ou informações internas de infraestrutura.</span>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
